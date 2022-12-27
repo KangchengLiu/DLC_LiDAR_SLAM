@@ -1,6 +1,6 @@
-# FAST_DLC_SLAM
+# DLC_SLAM
 
-## A Robust and Effective LiDAR-SLAM System with Learning-based Denoising and Loop Closure
+This is the offical implementation of our project "A Robust and Effective LiDAR-SLAM System with Learning-based Denoising and Loop Closure", which achieves robust learning-based LiDAR SLAM in real-time on real robotic platforms.
 
 
 - Front_end : Fast LiDAR-Inertial Odometry + D-Net   
