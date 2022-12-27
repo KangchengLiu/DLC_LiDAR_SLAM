@@ -1,11 +1,11 @@
-# :sunny: DLC_SLAM :fire: 
+# :sunny: DLC_SLAM :fire: :muscle: :muscle: :muscle: 
 
 This is the offical implementation of our project "A Robust and Effective LiDAR-SLAM System with Learning-based Denoising and Loop Closure", which achieves robust learning-based LiDAR SLAM in real-time on real robotic platforms.
 
 
-- Front_end : Fast LiDAR-Inertial Odometry + D-Net :muscle: 
+- Front_end : Fast LiDAR-Inertial Odometry + D-Net :muscle: :muscle: :muscle: 
 
-- Back_end: Tightly-coupled Lidar Inertial Odometry + LC-Net :muscle:
+- Back_end: Tightly-coupled Lidar Inertial Odometry + LC-Net :muscle: :muscle: :muscle: 
 
 
 ## Quick Navigation
