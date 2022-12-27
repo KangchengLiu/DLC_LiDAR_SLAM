@@ -196,7 +196,7 @@ when you want to see the path in the Map [satellite map](http://dict.youdao.com/
 ![mapviz_2](https://kaho-pic-1307106074.cos.ap-guangzhou.myqcloud.com/CSDN_Pictures/%E6%B7%B1%E8%93%9D%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E5%AE%9A%E4%BD%8D/%E7%AC%AC%E4%BA%8C%E7%AB%A0%E6%BF%80%E5%85%89%E9%87%8C%E7%A8%8B%E8%AE%A11mapviz_2.gif)
 
 
-## Attention:
+## Some checklist during implementations:
 
 1. In FAST-LIO2, the pose attitude is represented by so3, while in gtsam, the input relative_pose attitude is expressed in Euler RPY form, which needs to be converted and updated using Rodriguez's formula.
 
