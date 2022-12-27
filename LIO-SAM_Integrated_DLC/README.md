@@ -138,7 +138,8 @@ Line Color define:  path_no_optimized(blue)、path_updated(red)、path_gnss(gree
 
 #### 2.save_map
 
-输入如下指令到terminal中，地图文件将会保存在应文件夹中
+
+Enter the following command into the terminal, the map file will be saved in the appropriate folder:
 
 ```shell
 rosservice call /save_map "resolution: 0.0

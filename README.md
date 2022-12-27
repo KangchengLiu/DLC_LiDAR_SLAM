@@ -8,7 +8,7 @@ Front_end : Fast LiDAR-Inertial Odometry + D-Net   Back_end Tightly-coupled Lida
 
 ## Summary of the merits of our works based on previous works:
 
-1. [FAST-LIO2]: The tightly coupled lio slam system lacks global consistency because of its lack of front-end. Refer to the back-end part of lio_sam and connect to GTSAM for back-end optimization.
+1. We have improved the global consitency of the previous SLAM systems. The tightly coupled lio slam system lacks global consistency because of its lack of front-end. Refer to the back-end part of lio_sam and connect to GTSAM for back-end optimization.
 
 
 
@@ -16,11 +16,22 @@ Front_end : Fast LiDAR-Inertial Odometry + D-Net   Back_end Tightly-coupled Lida
 
 ## The additional Contributions  
 
-1. Use the externally connected PGO loopback detection module for back-end optimization. FAST_LIO_SAM transplants the back-end GTSAM optimization part of LIO-SAM to the code of FAST-LIO2, and the data transmission and processing link is clearer.
+1. We have proposed the network D-Net for denoising and the LC-Net for loop closure detection and they are both integrated into our DLC-SLAM system to improve the robustness and accuracy compared with current state-of the art solutions. To the best of our knowledge, we propose the first LiDAR SLAM system that can operate in real-time for large-scale robotics localization and mapping in real-world noisy environments with low textures to date.
 
-2. Add keyframe saving, and save maps and tracks through rosservice commands.
+2. Use the externally connected PGO loopback detection module for back-end optimization. FAST_LIO_SAM transplants the back-end GTSAM optimization part of LIO-SAM to the code of FAST-LIO2, and the data transmission and processing link is clearer.
 
-3. The back-end optimization in FAST_LIO_SLAM only uses the high-level GPS for constraints. The high-level GPS is generally noisy, so the XYZ three-dimensional postion of GPS is added to constrain the GPS a priori factor.
+3. Add keyframe saving, and save maps and tracks through rosservice commands.
+
+4. The back-end optimization in FAST_LIO_SLAM only uses the high-level GPS for constraints. The high-level GPS is generally noisy, so the XYZ three-dimensional postion of GPS is added to constrain the GPS a priori factor.
+
+
+## Navigation
+
+For the systematic ROS implementation of LIO-SAM, please refer to [LIO-SAM_DLC](LIO-SAM_DLC/README.md).
+
+For the systematic ROS implementation of LIO-SAM and the software as well as hardware integration into the real robotics platforms such as UAVs and UGVs, please refer to [LIO-SAM_Intergrated_DLC](LIO-SAM_Integrated_DLC/LIO-SAM_Integrated_DLC/README.md).
+
+For the systematic ROS implementation of LIO-SAM and the software as well as hardware integration with visual sensors such as RGB-D cameras, please refer to [LVI-SAM_DLC](LVI-SAM_DLC/README.md).
 
 ## Prerequisites
 
@@ -44,7 +55,7 @@ catkin_make
 
 #### 1 .For indoor dataset 
 
-dataset is from yanliang-wang 's [FAST_LIO_LC](https://github.com/yanliang-wang/FAST_LIO_LC)  ,[dataset](https://drive.google.com/file/d/1NGTN3aULoTMp3raF75LwMu-OUtzUx-zX/view?usp=sharing) which includes `/velodyne_points`(10Hz) and `/imu/data`(400Hz).
+The demo test dataset is from [FAST_LIO_LC](https://github.com/yanliang-wang/FAST_LIO_LC)  ,[dataset](https://drive.google.com/file/d/1NGTN3aULoTMp3raF75LwMu-OUtzUx-zX/view?usp=sharing) which includes `/velodyne_points`(10Hz) and `/imu/data`(400Hz).
 
 ```shell
 roslaunch fast_lio_sam mapping_velodyne16.launch
