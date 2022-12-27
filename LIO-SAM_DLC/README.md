@@ -213,6 +213,7 @@ rosbag play your-bag.bag -r 3
 
 
 ## Related Package
+  You can also try related engineering implementations of the LiDAR-IMU calibration of our friend:
 
-  - [Lidar-IMU calibration](https://github.com/chennuo0125-HIT/lidar_imu_calib)
+  - [The LiDAR-IMU calibration](https://github.com/chennuo0125-HIT/lidar_imu_calib)
 
