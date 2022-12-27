@@ -28,11 +28,11 @@ For the systematic ROS implementation of LIO-SAM and the software as well as har
 
 ## Summary of the merits of our works based on previous works:
 
-1. We have improved the global consitency of the previous SLAM systems. The tightly coupled lio slam system lacks global consistency because of its lack of front-end. Refer to the back-end part of lio_sam and connect to GTSAM for back-end optimization.
+1. We have improved the global consitency of the previous SLAM systems. The tightly coupled lio slam system lacks global consistency because of its lack of front-end. Refer to the back-end part of lio_sam and connect to GTSAM for back-end optimizations.
 
 
 
-2. Added on the basis of FAST_LIO_SLAM: 1. Euclidean distance-based loop detection search based on Radius Search, which increases the robustness of loop closure search; 2. The optimization result of loop detection is updated to the current frame pose of FAST-LIO2, and Refactor ikdtree to update subma.
+2. Added on the basis of FAST_LIO_SLAM: 1. Euclidean distance-based loop detection search based on Radius Search, which increases the robustness of loop closure search; 2. The optimization result of loop detection is updated to the current frame pose of FAST-LIO2, and Refactor ikdtree to update the local sub-map.
 
 
 ## Prerequisites
