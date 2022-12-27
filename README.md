@@ -3,18 +3,20 @@
 ## A Robust and Effective LiDAR-SLAM System with Learning-based Denoising and Loop Closure
 
 
-Front_end : Fast LiDAR-Inertial Odometry + D-Net   Back_end Tightly-coupled Lidar Inertial Odometry + LC-Net
+- Front_end : Fast LiDAR-Inertial Odometry + D-Net   
+
+- Back_end: Tightly-coupled Lidar Inertial Odometry + LC-Net
 
 
-## Summary of the merits of our works based on previous works:
+## Quick Navigation
 
-1. We have improved the global consitency of the previous SLAM systems. The tightly coupled lio slam system lacks global consistency because of its lack of front-end. Refer to the back-end part of lio_sam and connect to GTSAM for back-end optimization.
+For the systematic ROS implementation of LIO-SAM, please refer to [LIO-SAM_DLC](LIO-SAM_DLC/README.md).
 
+For the systematic ROS implementation of LIO-SAM and the software as well as hardware integration into the real robotics platforms such as UAVs and UGVs, please refer to [LIO-SAM_Intergrated_DLC_Fast](LIO-SAM_Integrated_DLC/README.md), and [LIO-SAM_Intergrated_DLC](LIO-SAM_Integrated_DLC/LIO-SAM_Integrated_DLC/README.md).
 
+For the systematic ROS implementation of LIO-SAM and the software as well as hardware integration with visual sensors such as RGB-D cameras, please refer to [LVI-SAM_DLC](LVI-SAM_DLC/README.md).
 
-2. Added on the basis of FAST_LIO_SLAM: 1. Euclidean distance-based loop detection search based on Radius Search, which increases the robustness of loop closure search; 2. The optimization result of loop detection is updated to the current frame pose of FAST-LIO2, and Refactor ikdtree to update subma.
-
-## The additional Contributions  
+## The Contributions  
 
 1. We have proposed the network D-Net for denoising and the LC-Net for loop closure detection and they are both integrated into our DLC-SLAM system to improve the robustness and accuracy compared with current state-of the art solutions. To the best of our knowledge, we propose the first LiDAR SLAM system that can operate in real-time for large-scale robotics localization and mapping in real-world noisy environments with low textures to date.
 
@@ -24,14 +26,14 @@ Front_end : Fast LiDAR-Inertial Odometry + D-Net   Back_end Tightly-coupled Lida
 
 4. The back-end optimization in FAST_LIO_SLAM only uses the high-level GPS for constraints. The high-level GPS is generally noisy, so the XYZ three-dimensional postion of GPS is added to constrain the GPS a priori factor.
 
+## Summary of the merits of our works based on previous works:
 
-## Navigation
+1. We have improved the global consitency of the previous SLAM systems. The tightly coupled lio slam system lacks global consistency because of its lack of front-end. Refer to the back-end part of lio_sam and connect to GTSAM for back-end optimization.
 
-For the systematic ROS implementation of LIO-SAM, please refer to [LIO-SAM_DLC](LIO-SAM_DLC/README.md).
 
-For the systematic ROS implementation of LIO-SAM and the software as well as hardware integration into the real robotics platforms such as UAVs and UGVs, please refer to [LIO-SAM_Intergrated_DLC_Fast](LIO-SAM_Integrated_DLC/README.md), and [LIO-SAM_Intergrated_DLC](LIO-SAM_Integrated_DLC/LIO-SAM_Integrated_DLC/README.md).
 
-For the systematic ROS implementation of LIO-SAM and the software as well as hardware integration with visual sensors such as RGB-D cameras, please refer to [LVI-SAM_DLC](LVI-SAM_DLC/README.md).
+2. Added on the basis of FAST_LIO_SLAM: 1. Euclidean distance-based loop detection search based on Radius Search, which increases the robustness of loop closure search; 2. The optimization result of loop detection is updated to the current frame pose of FAST-LIO2, and Refactor ikdtree to update subma.
+
 
 ## Prerequisites
 
