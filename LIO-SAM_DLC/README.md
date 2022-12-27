@@ -1,9 +1,12 @@
 # Our Enhanced and Improved Features based on LIO-SAM
-  1. Added support for Sagitar radar data, change the parameter ‘sensor: “robosense”’ in the yaml file;
 
-  2. Added automatic calculation line number and relative time. To use automatic calculation, you need to set the parameter ‘has_ring: false’. At the same time, you need to set the minimum beam angle ‘ang_bottom’ and vertical angle resolution ‘ang_res_y’ according to the radar characteristics;
+  1. We have improved the global consitency of the previous SLAM systems. The tightly coupled lio slam system lacks global consistency because of its lack of front-end. Refer to the back-end part of lio_sam and connect to GTSAM for back-end optimization.
 
-  3. Added low-frequency IMU adaptation (50HZ, 100HZ), and the parameter "imuRate" can be configured as the actual frequency of the IMU through the yaml file;
+  2. Added support for Sagitar radar data, change the parameter ‘sensor: “robosense”’ in the yaml file;
+
+  3. Added automatic calculation line number and relative time. To use automatic calculation, you need to set the parameter ‘has_ring: false’. At the same time, you need to set the minimum beam angle ‘ang_bottom’ and vertical angle resolution ‘ang_res_y’ according to the radar characteristics;
+
+  4. Added low-frequency IMU adaptation (50HZ, 100HZ), and the parameter "imuRate" can be configured as the actual frequency of the IMU through the yaml file;
 
 
 # LIO-SAM

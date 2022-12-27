@@ -6,11 +6,12 @@ A Robust and Effective LiDAR-SLAM System with Learning-based Denoising and Loop 
 
 ## Summary of the merits of our works based on previous works:
 
-1.FAST-LIO2: The tightly coupled lio slam system lacks global consistency because of its lack of front-end. Refer to the back-end part of lio_sam and connect to GTSAM for back-end optimization.
+1. We have proposed the network D-Net for denoising and the LC-Net for loop closure detection and they are both integrated into our DLC-SLAM system to improve the robustness and accuracy compared with current state-of the art solutions. To the best of our knowledge, we propose the first LiDAR SLAM system that can operate in real-time for large-scale robotics localization and mapping in real-world noisy environments with low textures to date.
+
+2. We have improved the global consitency of the previous SLAM systems. The tightly coupled lio slam system lacks global consistency because of its lack of front-end. Refer to the back-end part of lio_sam and connect to GTSAM for back-end optimization.
 
 
-
-3.Added on the basis of FAST_LIO_SLAM: 1. Euclidean distance-based loop detection search based on Radius Search, which increases the robustness of loop closure search; 2. The optimization result of loop detection is updated to the current frame pose of FAST-LIO2, and Refactor ikdtree to update subma.
+3. Added on the basis of FAST_LIO_SLAM: 1. Euclidean distance-based loop detection search based on Radius Search, which increases the robustness of loop closure search; 2. The optimization result of loop detection is updated to the current frame pose of FAST-LIO2, and Refactor ikdtree to update subma.
 
 ## The additional Contributions  
 

@@ -29,7 +29,7 @@ Front_end : Fast LiDAR-Inertial Odometry + D-Net   Back_end Tightly-coupled Lida
 
 For the systematic ROS implementation of LIO-SAM, please refer to [LIO-SAM_DLC](LIO-SAM_DLC/README.md).
 
-For the systematic ROS implementation of LIO-SAM and the software as well as hardware integration into the real robotics platforms such as UAVs and UGVs, please refer to [LIO-SAM_Intergrated_DLC](LIO-SAM_Integrated_DLC/LIO-SAM_Integrated_DLC/README.md).
+For the systematic ROS implementation of LIO-SAM and the software as well as hardware integration into the real robotics platforms such as UAVs and UGVs, please refer to [LIO-SAM_Intergrated_DLC_Fast](LIO-SAM_Integrated_DLC/README.md), and [LIO-SAM_Intergrated_DLC](LIO-SAM_Integrated_DLC/LIO-SAM_Integrated_DLC/README.md).
 
 For the systematic ROS implementation of LIO-SAM and the software as well as hardware integration with visual sensors such as RGB-D cameras, please refer to [LVI-SAM_DLC](LVI-SAM_DLC/README.md).
 

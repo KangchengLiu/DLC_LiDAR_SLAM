@@ -1,11 +1,13 @@
 # NEW Feature
 This repo is adapted based on the original LVI_SAM, which makes it easier to adapt your sensor.
 
-1. The original version of lio_sam sets many sensor external parameters to fixed values in the code, this version extracts the external parameters into the yaml file, making it easier to configure;
+1. We have improved the global consitency of the previous SLAM systems. The tightly coupled lio slam system lacks global consistency because of its lack of front-end. Refer to the back-end part of lio_sam and connect to GTSAM for back-end optimization.
 
-2. The original version of lio_sam dose not consider the translation amount between lidar and camera, this version adds the translation amount;
+2. The original version of lio_sam sets many sensor external parameters to fixed values in the code, this version extracts the external parameters into the yaml file, making it easier to configure;
 
-3. The "imu2LidarExtrinsicRotation" 、“extrinsicRotation”、“extrinsicTranslation”、"lcExtrinsicRotation" and "lcExtrinsicTranslation" in "config/params_camera.yaml" needs to be set as your device extrinsic.
+3. The original version of lio_sam dose not consider the translation amount between lidar and camera, this version adds the translation amount;
+
+4. The "imu2LidarExtrinsicRotation" 、“extrinsicRotation”、“extrinsicTranslation”、"lcExtrinsicRotation" and "lcExtrinsicTranslation" in "config/params_camera.yaml" needs to be set as your device extrinsic.
 
 
 This repository contains code for a lidar-visual-inertial odometry and mapping system, which combines the advantages of [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM/tree/a246c960e3fca52b989abf888c8cf1fae25b7c25) and [Vins-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) at a system level.
