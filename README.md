@@ -16,6 +16,17 @@ For the systematic ROS implementation of LIO-SAM and the software as well as har
 
 For the systematic ROS implementation of LVI-SAM and the software as well as hardware integration with visual sensors such as RGB-D cameras, please refer to [LVI-SAM_DLC](LVI-SAM_DLC/README.md).
 
+## Demo Results
+
+
+### Results on complicated large-scale real-world circumstances with each more than 50000 square meters
+
+![Arch Image](./Figs/Denoise_SLAM.png)
+
+### Results on public KITTI Benchmark
+
+![Arch Image](./Figs/KITTI_Sequences_final.png)
+
 ## The Contributions  
 
 1. We have proposed the network D-Net for denoising and the LC-Net for loop closure detection and they are both integrated into our DLC-SLAM system to improve the robustness and accuracy compared with current state-of the art solutions. To the best of our knowledge, we propose the first LiDAR SLAM system that can operate in real-time for large-scale robotics localization and mapping in real-world noisy environments with low textures to date.
